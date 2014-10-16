@@ -187,7 +187,7 @@ $footer_margin: 0;
 //-----------------
 //  CSS BG Images
 //-----------------
-$homepage-bg-image: url('../themes/atp/images/sunrise.jpg');
+$homepage-bg-image: url('../themes/atp/images/pracarelogio.jpg');
 
 $login-banner-image: none;
 $register-banner-image: none;
@@ -208,3 +208,14 @@ $video-thumb-url: '../themes/atp/images/edx.png';
     margin: 0 !important;
     text-align: right;
 }
+
+// Preciso aprender usar sass...
+
+.home > header .title {
+  margin-left: 20px;
+}
+
+
+nav-references ol { margin: 0; padding: 0; text-align: center; }
+nav-references ol li { cursor: pointer; display: inline-block; list-style: none; margin: 15px; }
+nav-references ol li .img { vertical-align: baseline; float:right; margin-bottom: 5px; margin-left: 5px; }
