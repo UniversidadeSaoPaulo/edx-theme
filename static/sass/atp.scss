@@ -23,7 +23,7 @@ $main-bg-60: lighten($main-bg, 18.5%); //Main Border/HR Color
 $main-bg-25: lighten($main-bg, 25%); 
 
 //Secondary Color Variables
-$secondary: #b5a4b7;
+$secondary: #628ABB;
 $secondary-50: lighten($secondary, 9%);
 $secondary-25: lighten($secondary, 20%); //Important Heading BG Color 
 
@@ -215,7 +215,24 @@ $video-thumb-url: '../themes/atp/images/edx.png';
   margin-left: 20px;
 }
 
+// colophon
+ .credits {
+  margin-right: flex-gutter();
+  width: flex-grid(4,12);
+  float: right;
 
-nav-references ol { margin: 0; padding: 0; text-align: center; }
-nav-references ol li { cursor: pointer; display: inline-block; list-style: none; margin: 15px; }
-nav-references ol li .img { vertical-align: baseline; float:right; margin-bottom: 5px; margin-left: 5px; }
+   .nav-credits {
+    @include clearfix();
+    margin: $footer_margin;
+     li {
+      float: left;
+      margin-right: ($baseline*0.75);
+       a {
+        color: tint($black, 20%);
+        }
+        &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
